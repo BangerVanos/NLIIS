@@ -24,8 +24,10 @@ class VocabularyCreator:
                                             key=lambda unit: unit.lemma)
         return self._vocabulary_units  
 
-    def get_inflections(self, lemma_list: list[str]):
-        return {lemma: lm.getAllInflections(lemma) for lemma in lemma_list} 
+    @staticmethod
+    def get_inflections(lemma_list: list[str] | list[VocabularyUnit]):
+        return {lemma: lm.getAllInflections(lemma.lemma if isinstance(lemma, VocabularyUnit) else lemma)
+                for lemma in lemma_list} 
 
     @staticmethod
     def get_inflection(lemma: str | VocabularyUnit, tag: str) -> str | None:
