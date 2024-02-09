@@ -1,0 +1,1025 @@
+{
+    "Latin": {
+        "pos": "PROPN",
+        "inflections": {
+            "NNS": [
+                "Latin",
+                "Latins"
+            ],
+            "NN": [
+                "Latin"
+            ]
+        }
+    },
+    "also": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "also"
+            ]
+        }
+    },
+    "as": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "as"
+            ]
+        }
+    },
+    "be": {
+        "pos": "AUX",
+        "inflections": {
+            "VB": [
+                "be"
+            ],
+            "VBD": [
+                "was",
+                "were"
+            ],
+            "VBG": [
+                "being"
+            ],
+            "VBN": [
+                "been"
+            ],
+            "VBP": [
+                "am",
+                "are"
+            ],
+            "VBZ": [
+                "is"
+            ]
+        }
+    },
+    "can": {
+        "pos": "AUX",
+        "inflections": {
+            "VB": [
+                "can"
+            ],
+            "VBD": [
+                "could"
+            ]
+        }
+    },
+    "color": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "colors",
+                "color"
+            ],
+            "NN": [
+                "color"
+            ]
+        }
+    },
+    "computer": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "computers"
+            ],
+            "NN": [
+                "computer"
+            ]
+        }
+    },
+    "consider": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "considered"
+            ],
+            "VBG": [
+                "considering"
+            ],
+            "VBZ": [
+                "considers"
+            ],
+            "VB": [
+                "consider"
+            ],
+            "VBP": [
+                "consider"
+            ]
+        }
+    },
+    "content": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "contents",
+                "content"
+            ],
+            "NN": [
+                "content"
+            ]
+        }
+    },
+    "creativity": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "creativity"
+            ],
+            "NN": [
+                "creativity"
+            ]
+        }
+    },
+    "customization": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "customizations",
+                "customization"
+            ],
+            "NN": [
+                "customization"
+            ]
+        }
+    },
+    "define": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "defined"
+            ],
+            "VBG": [
+                "defining"
+            ],
+            "VBZ": [
+                "defines"
+            ],
+            "VB": [
+                "define"
+            ],
+            "VBP": [
+                "define"
+            ]
+        }
+    },
+    "definition": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "definitions",
+                "definition"
+            ],
+            "NN": [
+                "definition"
+            ]
+        }
+    },
+    "denotation": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "denotation",
+                "denotations"
+            ],
+            "NN": [
+                "denotation"
+            ]
+        }
+    },
+    "denote": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "denoted"
+            ],
+            "VBG": [
+                "denoting"
+            ],
+            "VBZ": [
+                "denotes"
+            ],
+            "VB": [
+                "denote"
+            ],
+            "VBP": [
+                "denote"
+            ]
+        }
+    },
+    "dimensional": {
+        "pos": "ADJ",
+        "inflections": {
+            "JJ": [
+                "dimensional"
+            ]
+        }
+    },
+    "distinct": {
+        "pos": "ADJ",
+        "inflections": {
+            "JJR": [
+                "distincter"
+            ],
+            "JJS": [
+                "distinctest"
+            ],
+            "JJ": [
+                "distinct"
+            ]
+        }
+    },
+    "distinguish": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "distinguished"
+            ],
+            "VBG": [
+                "distinguishing"
+            ],
+            "VBZ": [
+                "distinguishes"
+            ],
+            "VB": [
+                "distinguish"
+            ],
+            "VBP": [
+                "distinguish"
+            ]
+        }
+    },
+    "do": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "did"
+            ],
+            "VBN": [
+                "done"
+            ],
+            "VBG": [
+                "doing"
+            ],
+            "VBZ": [
+                "does"
+            ],
+            "VB": [
+                "do"
+            ],
+            "VBP": [
+                "do"
+            ]
+        }
+    },
+    "document": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "documents"
+            ],
+            "NN": [
+                "document"
+            ]
+        }
+    },
+    "documentation": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "documentation",
+                "documentations"
+            ],
+            "NN": [
+                "documentation"
+            ]
+        }
+    },
+    "draw": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "drew"
+            ],
+            "VBN": [
+                "drawn"
+            ],
+            "VBG": [
+                "drawing"
+            ],
+            "VBZ": [
+                "draws"
+            ],
+            "VB": [
+                "draw"
+            ],
+            "VBP": [
+                "draw"
+            ]
+        }
+    },
+    "electronic": {
+        "pos": "ADJ",
+        "inflections": {
+            "JJ": [
+                "electronic"
+            ]
+        }
+    },
+    "event": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "events"
+            ],
+            "NN": [
+                "event"
+            ]
+        }
+    },
+    "evidence": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "evidences",
+                "evidence"
+            ],
+            "NN": [
+                "evidence"
+            ]
+        }
+    },
+    "example": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "examples",
+                "example"
+            ],
+            "NN": [
+                "example"
+            ]
+        }
+    },
+    "existence": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "existences",
+                "existence"
+            ],
+            "NN": [
+                "existence"
+            ]
+        }
+    },
+    "express": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "expressed"
+            ],
+            "VBG": [
+                "expressing"
+            ],
+            "VBZ": [
+                "expresses"
+            ],
+            "VB": [
+                "express"
+            ],
+            "VBP": [
+                "express"
+            ]
+        }
+    },
+    "fact": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "facts",
+                "fact"
+            ],
+            "NN": [
+                "fact"
+            ]
+        }
+    },
+    "fictional": {
+        "pos": "ADJ",
+        "inflections": {
+            "JJ": [
+                "fictional"
+            ]
+        }
+    },
+    "file": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "files"
+            ],
+            "NN": [
+                "file"
+            ]
+        }
+    },
+    "font": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "fonts"
+            ],
+            "NN": [
+                "font"
+            ]
+        }
+    },
+    "format": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "formats"
+            ],
+            "NN": [
+                "format"
+            ]
+        }
+    },
+    "freely": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "freely"
+            ]
+        }
+    },
+    "give": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "gave"
+            ],
+            "VBN": [
+                "given"
+            ],
+            "VBG": [
+                "giving"
+            ],
+            "VBZ": [
+                "gives"
+            ],
+            "VB": [
+                "give"
+            ],
+            "VBP": [
+                "give"
+            ]
+        }
+    },
+    "have": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "had"
+            ],
+            "VBN": [
+                "had"
+            ],
+            "VBG": [
+                "having"
+            ],
+            "VBZ": [
+                "has"
+            ],
+            "VB": [
+                "have"
+            ],
+            "VBP": [
+                "have"
+            ]
+        }
+    },
+    "history": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "histories",
+                "history"
+            ],
+            "NN": [
+                "history"
+            ]
+        }
+    },
+    "image": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "images"
+            ],
+            "NN": [
+                "image"
+            ]
+        }
+    },
+    "include": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "included"
+            ],
+            "VBG": [
+                "including"
+            ],
+            "VBZ": [
+                "includes"
+            ],
+            "VB": [
+                "include"
+            ],
+            "VBP": [
+                "include"
+            ]
+        }
+    },
+    "large": {
+        "pos": "ADJ",
+        "inflections": {
+            "JJR": [
+                "larger"
+            ],
+            "JJS": [
+                "largest"
+            ],
+            "JJ": [
+                "large"
+            ]
+        }
+    },
+    "lesson": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "lessons"
+            ],
+            "NN": [
+                "lesson"
+            ]
+        }
+    },
+    "manifestation": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "manifestations",
+                "manifestation"
+            ],
+            "NN": [
+                "manifestation"
+            ]
+        }
+    },
+    "medium": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "media",
+                "mediums"
+            ],
+            "NN": [
+                "medium"
+            ]
+        }
+    },
+    "memorialize": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "memorialized"
+            ],
+            "VBG": [
+                "memorializing"
+            ],
+            "VBZ": [
+                "memorializes"
+            ],
+            "VB": [
+                "memorialize"
+            ],
+            "VBP": [
+                "memorialize"
+            ]
+        }
+    },
+    "object": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "objects"
+            ],
+            "NN": [
+                "object"
+            ]
+        }
+    },
+    "often": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "often"
+            ]
+        }
+    },
+    "opinion": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "opinions",
+                "opinion"
+            ],
+            "NN": [
+                "opinion"
+            ]
+        }
+    },
+    "originate": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "originated"
+            ],
+            "VBG": [
+                "originating"
+            ],
+            "VBZ": [
+                "originates"
+            ],
+            "VB": [
+                "originate"
+            ],
+            "VBP": [
+                "originate"
+            ]
+        }
+    },
+    "otherwise": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "otherwise"
+            ]
+        }
+    },
+    "paper": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "papers",
+                "paper"
+            ],
+            "NN": [
+                "paper"
+            ]
+        }
+    },
+    "past": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "pasts"
+            ],
+            "NN": [
+                "past"
+            ]
+        }
+    },
+    "present": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "presented"
+            ],
+            "VBG": [
+                "presenting"
+            ],
+            "VBZ": [
+                "presents"
+            ],
+            "VB": [
+                "present"
+            ],
+            "VBP": [
+                "present"
+            ]
+        }
+    },
+    "primarily": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "primarily"
+            ]
+        }
+    },
+    "proof": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "proofs",
+                "proof"
+            ],
+            "NN": [
+                "proof"
+            ]
+        }
+    },
+    "represent": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "represented"
+            ],
+            "VBG": [
+                "representing"
+            ],
+            "VBZ": [
+                "represents"
+            ],
+            "VB": [
+                "represent"
+            ],
+            "VBP": [
+                "represent"
+            ]
+        }
+    },
+    "representation": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "representations",
+                "representation"
+            ],
+            "NN": [
+                "representation"
+            ]
+        }
+    },
+    "right": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "rights",
+                "right"
+            ],
+            "NN": [
+                "right"
+            ]
+        }
+    },
+    "satisfy": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "satisfied"
+            ],
+            "VBG": [
+                "satisfying"
+            ],
+            "VBZ": [
+                "satisfies"
+            ],
+            "VB": [
+                "satisfy"
+            ],
+            "VBP": [
+                "satisfy"
+            ]
+        }
+    },
+    "share": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "shared"
+            ],
+            "VBG": [
+                "sharing"
+            ],
+            "VBZ": [
+                "shares"
+            ],
+            "VB": [
+                "share"
+            ],
+            "VBP": [
+                "share"
+            ]
+        }
+    },
+    "so": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "so"
+            ]
+        }
+    },
+    "structure": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "structures",
+                "structure"
+            ],
+            "NN": [
+                "structure"
+            ]
+        }
+    },
+    "teach": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "taught"
+            ],
+            "VBN": [
+                "taught"
+            ],
+            "VBG": [
+                "teaching"
+            ],
+            "VBZ": [
+                "teaches"
+            ],
+            "VB": [
+                "teach"
+            ],
+            "VBP": [
+                "teach"
+            ]
+        }
+    },
+    "textual": {
+        "pos": "ADJ",
+        "inflections": {
+            "JJ": [
+                "textual"
+            ]
+        }
+    },
+    "think": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "thought"
+            ],
+            "VBN": [
+                "thought"
+            ],
+            "VBG": [
+                "thinking"
+            ],
+            "VBZ": [
+                "thinks"
+            ],
+            "VB": [
+                "think"
+            ],
+            "VBP": [
+                "think"
+            ]
+        }
+    },
+    "transmission": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "transmissions",
+                "transmission"
+            ],
+            "NN": [
+                "transmission"
+            ]
+        }
+    },
+    "truth": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "truths",
+                "truth"
+            ],
+            "NN": [
+                "truth"
+            ]
+        }
+    },
+    "use": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "used"
+            ],
+            "VBG": [
+                "using"
+            ],
+            "VBZ": [
+                "uses"
+            ],
+            "VB": [
+                "use"
+            ],
+            "VBP": [
+                "use"
+            ]
+        }
+    },
+    "useful": {
+        "pos": "ADJ",
+        "inflections": {
+            "JJ": [
+                "useful"
+            ]
+        }
+    },
+    "usually": {
+        "pos": "ADV",
+        "inflections": {
+            "RB": [
+                "usually"
+            ]
+        }
+    },
+    "variety": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "varieties",
+                "variety"
+            ],
+            "NN": [
+                "variety"
+            ]
+        }
+    },
+    "verb": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "verbs"
+            ],
+            "NN": [
+                "verb"
+            ]
+        }
+    },
+    "well": {
+        "pos": "ADV",
+        "inflections": {
+            "RBR": [
+                "better"
+            ],
+            "RBS": [
+                "best"
+            ],
+            "RB": [
+                "well"
+            ]
+        }
+    },
+    "word": {
+        "pos": "NOUN",
+        "inflections": {
+            "NNS": [
+                "words",
+                "word"
+            ],
+            "NN": [
+                "word"
+            ]
+        }
+    },
+    "write": {
+        "pos": "VERB",
+        "inflections": {
+            "VBD": [
+                "wrote"
+            ],
+            "VBN": [
+                "written"
+            ],
+            "VBG": [
+                "writing"
+            ],
+            "VBZ": [
+                "writes"
+            ],
+            "VB": [
+                "write"
+            ],
+            "VBP": [
+                "write"
+            ]
+        }
+    }
+}
