@@ -22,8 +22,9 @@ def main_view():
 
 
 def show_vocabulary(vocabulary, placeholder) -> None:
-    with placeholder.container():
+    st.text(f'Vocabulary size: {len(vocabulary.keys())}')
+    with placeholder.container(height=500):
         for unit, all_inflections in vocabulary.items():
-            st.write(unit)
+            st.text(f'- {(unit.lemma.capitalize())}')
             for tag, inflections in all_inflections.items():
-                st.write(f'{' '.join(inflections)} - {spacy.explain(tag)}')
+                st.text(f'{', '.join(inflections)} - {spacy.explain(tag)}')
