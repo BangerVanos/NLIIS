@@ -10,4 +10,8 @@ class NLConfigManager:
 
     @property
     def spacy_core(self) -> str:
-        return self._configs['LANGUAGE_CORE_NAME']    
+        return self._configs['LANGUAGE_CORE_NAME']
+
+    @property
+    def possible_sentence_parts(self) -> dict:
+        return self._configs['POSSIBLE_TAG_PART_OF_SENTENCE']    

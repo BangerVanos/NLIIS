@@ -1,3 +1,18 @@
 {
-    "LANGUAGE_CORE_NAME": "en_core_web_md"    
+    "LANGUAGE_CORE_NAME": "en_core_web_md",
+    "POSSIBLE_TAG_PART_OF_SENTENCE": {
+        "ADJ": ["complete subject", "complement", "modifier"],
+        "ADV": ["modifier"],
+        "AUX": ["simple predicate", "complete predicate", "compound predicate"],
+        "CCONJ": ["compound subject", "compound predicate"],
+        "DET": ["direct object", "indirect object", "simple subject",
+                "complete subject", "compound subject"],
+        "NOUN": ["simple subject", "complete subject", "compound subject",
+                 "direct object", "indirect object"],
+        "PRON": ["simple subject", "complete predicate", "direct object",
+                 "indirect object", "complete predicate", "compound predicate"],
+        "PROPN": ["simple subject", "complete subject", "compound subject",
+                  "direct object", "indirect object"],
+        "VERB": ["simple predicate", "complete predicate", "compound predicate"]
+    }    
 }
