@@ -1,4 +1,3 @@
-from app.view.main_view import main_view
 import st_pages as pg
 import streamlit as st
 
@@ -11,6 +10,8 @@ pg.show_pages(
 )
 
 st.set_page_config(page_title='Welcome!', layout='wide')
+
+st.write('## Welcome to inflections analyzer app!')
 st.info('First time using app? Here is small tutorial on how to use it:\n'
         '1. Go to *Main page* page to use this app;\n'
         '2. After choosing *Main page*, upload your PDF with text to analyze:\n'
