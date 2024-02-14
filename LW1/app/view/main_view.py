@@ -1,6 +1,6 @@
 import streamlit as st
-from ..nl_processor.pdf_reader import PDFReader
-from ..nl_processor.vocabulary_creator import VocabularyCreator
+from app.nl_processor.pdf_reader import PDFReader
+from app.nl_processor.vocabulary_creator import VocabularyCreator
 import spacy
 import json
 import os
@@ -8,6 +8,10 @@ import os
 
 def main_view():
     st.set_page_config('Inflections App', layout='wide')
+
+    with st.sidebar:                
+        st.warning('Need help? Go to *Welcome page* for beginner tutorial')
+        
 
     st.title('Inflections app')
     st.write('## Load your PDF here ⬇️')
@@ -75,4 +79,7 @@ def filter_vocabulary():
                                            st.session_state.vocabulary.items()))        
     if st.session_state.get('part_filter'):
         st.session_state.vocabulary = dict(filter(lambda pair: st.session_state.part_filter.lower()
-                                           in pair[1]['sentence_part'], st.session_state.vocabulary.items()))        
+                                           in pair[1]['sentence_part'], st.session_state.vocabulary.items()))
+
+
+main_view()        
