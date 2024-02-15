@@ -28,7 +28,7 @@ class VocabularyCreator:
         spacy_text = self._nlp(self._raw_text)
         self._vocabulary_units = sorted(set([VocabularyUnit(token.lemma_, token.pos_) for token in spacy_text
                                              if token.is_alpha and token.is_ascii]),
-                                            key=lambda unit: unit.lemma)
+                                            key=lambda unit: unit.lemma.lower())
         return self._vocabulary_units
     
     def get_all_inflections(self):
@@ -58,5 +58,5 @@ class VocabularyCreator:
                 except json.JSONDecodeError:
                     vocabulary = {}
                 vocabulary.update(text_vocabulary)
-                vocabulary = dict(sorted(vocabulary.items()))
+                vocabulary = dict(sorted(vocabulary.items(), key=lambda item: item[0].lower()))
                 json.dump(vocabulary, file, indent=4)

@@ -1,91 +1,4 @@
 {
-    "East": {
-        "pos": "PROPN",
-        "inflections": {
-            "NN": [
-                "East"
-            ]
-        },
-        "sentence_part": [
-            "simple subject",
-            "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
-        ]
-    },
-    "Finland": {
-        "pos": "PROPN",
-        "inflections": {
-            "NNS": [
-                "Finland"
-            ],
-            "NN": [
-                "Finland"
-            ]
-        },
-        "sentence_part": [
-            "simple subject",
-            "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
-        ]
-    },
-    "North": {
-        "pos": "PROPN",
-        "inflections": {
-            "NNS": [
-                "North"
-            ],
-            "NN": [
-                "North"
-            ]
-        },
-        "sentence_part": [
-            "simple subject",
-            "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
-        ]
-    },
-    "Prince": {
-        "pos": "PROPN",
-        "inflections": {
-            "NNS": [
-                "Prince"
-            ],
-            "NN": [
-                "Prince"
-            ]
-        },
-        "sentence_part": [
-            "simple subject",
-            "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
-        ]
-    },
-    "Solomon": {
-        "pos": "PROPN",
-        "inflections": {
-            "NNS": [
-                "Solomon"
-            ],
-            "NN": [
-                "Solomon"
-            ]
-        },
-        "sentence_part": [
-            "simple subject",
-            "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
-        ]
-    },
     "able": {
         "pos": "ADJ",
         "inflections": {
@@ -751,7 +664,7 @@
         ]
     },
     "be": {
-        "pos": "VERB",
+        "pos": "AUX",
         "inflections": {
             "VB": [
                 "be"
@@ -1172,28 +1085,22 @@
         ]
     },
     "bloom": {
-        "pos": "VERB",
+        "pos": "NOUN",
         "inflections": {
-            "VBD": [
-                "bloomed"
-            ],
-            "VBG": [
-                "blooming"
-            ],
-            "VBZ": [
-                "blooms"
-            ],
-            "VB": [
+            "NNS": [
+                "blooms",
                 "bloom"
             ],
-            "VBP": [
+            "NN": [
                 "bloom"
             ]
         },
         "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "blow": {
@@ -1684,28 +1591,22 @@
         ]
     },
     "chain": {
-        "pos": "VERB",
+        "pos": "NOUN",
         "inflections": {
-            "VBD": [
-                "chained"
-            ],
-            "VBG": [
-                "chaining"
-            ],
-            "VBZ": [
-                "chains"
-            ],
-            "VB": [
+            "NNS": [
+                "chains",
                 "chain"
             ],
-            "VBP": [
+            "NN": [
                 "chain"
             ]
         },
         "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "chair": {
@@ -1745,22 +1646,31 @@
         ]
     },
     "chance": {
-        "pos": "NOUN",
+        "pos": "VERB",
         "inflections": {
-            "NNS": [
-                "chances",
+            "VBD": [
+                "chanced"
+            ],
+            "VBN": [
+                "chanced"
+            ],
+            "VBG": [
+                "chancing"
+            ],
+            "VBZ": [
+                "chances"
+            ],
+            "VB": [
                 "chance"
             ],
-            "NN": [
+            "VBP": [
                 "chance"
             ]
         },
         "sentence_part": [
-            "simple subject",
-            "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
+            "simple predicate",
+            "complete predicate",
+            "compound predicate"
         ]
     },
     "change": {
@@ -2655,7 +2565,7 @@
         ]
     },
     "do": {
-        "pos": "AUX",
+        "pos": "VERB",
         "inflections": {
             "VBD": [
                 "did"
@@ -2922,6 +2832,21 @@
             "modifier"
         ]
     },
+    "East": {
+        "pos": "PROPN",
+        "inflections": {
+            "NN": [
+                "East"
+            ]
+        },
+        "sentence_part": [
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
+        ]
+    },
     "eastern": {
         "pos": "ADJ",
         "inflections": {
@@ -3111,15 +3036,13 @@
         ]
     },
     "enough": {
-        "pos": "ADJ",
+        "pos": "ADV",
         "inflections": {
-            "JJ": [
+            "RB": [
                 "enough"
             ]
         },
         "sentence_part": [
-            "complete subject",
-            "complement",
             "modifier"
         ]
     },
@@ -3432,28 +3355,22 @@
         ]
     },
     "fancy": {
-        "pos": "VERB",
+        "pos": "NOUN",
         "inflections": {
-            "VBD": [
-                "fancied"
-            ],
-            "VBG": [
-                "fancying"
-            ],
-            "VBZ": [
-                "fancies"
-            ],
-            "VB": [
+            "NNS": [
+                "fancies",
                 "fancy"
             ],
-            "VBP": [
+            "NN": [
                 "fancy"
             ]
         },
         "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "far": {
@@ -3838,6 +3755,24 @@
             "compound predicate"
         ]
     },
+    "Finland": {
+        "pos": "PROPN",
+        "inflections": {
+            "NNS": [
+                "Finland"
+            ],
+            "NN": [
+                "Finland"
+            ]
+        },
+        "sentence_part": [
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
+        ]
+    },
     "fire": {
         "pos": "NOUN",
         "inflections": {
@@ -3869,15 +3804,13 @@
         ]
     },
     "first": {
-        "pos": "ADJ",
+        "pos": "ADV",
         "inflections": {
-            "JJ": [
+            "RB": [
                 "first"
             ]
         },
         "sentence_part": [
-            "complete subject",
-            "complement",
             "modifier"
         ]
     },
@@ -4746,21 +4679,28 @@
         ]
     },
     "guide": {
-        "pos": "NOUN",
+        "pos": "VERB",
         "inflections": {
-            "NNS": [
+            "VBD": [
+                "guided"
+            ],
+            "VBG": [
+                "guiding"
+            ],
+            "VBZ": [
                 "guides"
             ],
-            "NN": [
+            "VB": [
+                "guide"
+            ],
+            "VBP": [
                 "guide"
             ]
         },
         "sentence_part": [
-            "simple subject",
-            "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
+            "simple predicate",
+            "complete predicate",
+            "compound predicate"
         ]
     },
     "habit": {
@@ -5529,13 +5469,23 @@
         ]
     },
     "ill": {
-        "pos": "ADV",
+        "pos": "ADJ",
         "inflections": {
-            "RB": [
+            "JJR": [
+                "worse",
+                "iller"
+            ],
+            "JJS": [
+                "worst",
+                "illest"
+            ],
+            "JJ": [
                 "ill"
             ]
         },
         "sentence_part": [
+            "complete subject",
+            "complement",
             "modifier"
         ]
     },
@@ -6082,15 +6032,13 @@
         ]
     },
     "last": {
-        "pos": "ADJ",
+        "pos": "ADV",
         "inflections": {
-            "JJ": [
+            "RB": [
                 "last"
             ]
         },
         "sentence_part": [
-            "complete subject",
-            "complement",
             "modifier"
         ]
     },
@@ -6672,22 +6620,16 @@
         ]
     },
     "magic": {
-        "pos": "NOUN",
+        "pos": "ADJ",
         "inflections": {
-            "NNS": [
-                "magics",
-                "magic"
-            ],
-            "NN": [
+            "JJ": [
                 "magic"
             ]
         },
         "sentence_part": [
-            "simple subject",
             "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
+            "complement",
+            "modifier"
         ]
     },
     "magical": {
@@ -6922,31 +6864,21 @@
         ]
     },
     "mean": {
-        "pos": "VERB",
+        "pos": "NOUN",
         "inflections": {
-            "VBD": [
-                "meant"
-            ],
-            "VBN": [
-                "meant"
-            ],
-            "VBG": [
-                "meaning"
-            ],
-            "VBZ": [
+            "NNS": [
                 "means"
             ],
-            "VB": [
-                "mean"
-            ],
-            "VBP": [
+            "NN": [
                 "mean"
             ]
         },
         "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "meet": {
@@ -7034,16 +6966,21 @@
         ]
     },
     "middle": {
-        "pos": "ADJ",
+        "pos": "NOUN",
         "inflections": {
-            "JJ": [
+            "NNS": [
+                "middles"
+            ],
+            "NN": [
                 "middle"
             ]
         },
         "sentence_part": [
+            "simple subject",
             "complete subject",
-            "complement",
-            "modifier"
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "mile": {
@@ -7567,6 +7504,24 @@
             "indirect object"
         ]
     },
+    "North": {
+        "pos": "PROPN",
+        "inflections": {
+            "NNS": [
+                "North"
+            ],
+            "NN": [
+                "North"
+            ]
+        },
+        "sentence_part": [
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
+        ]
+    },
     "notice": {
         "pos": "VERB",
         "inflections": {
@@ -8031,28 +7986,22 @@
         ]
     },
     "perch": {
-        "pos": "VERB",
+        "pos": "NOUN",
         "inflections": {
-            "VBD": [
-                "perched"
-            ],
-            "VBG": [
-                "perching"
-            ],
-            "VBZ": [
-                "perches"
-            ],
-            "VB": [
+            "NNS": [
+                "perches",
                 "perch"
             ],
-            "VBP": [
+            "NN": [
                 "perch"
             ]
         },
         "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "pestilence": {
@@ -8111,28 +8060,21 @@
         ]
     },
     "place": {
-        "pos": "VERB",
+        "pos": "NOUN",
         "inflections": {
-            "VBD": [
-                "placed"
-            ],
-            "VBG": [
-                "placing"
-            ],
-            "VBZ": [
+            "NNS": [
                 "places"
             ],
-            "VB": [
-                "place"
-            ],
-            "VBP": [
+            "NN": [
                 "place"
             ]
         },
         "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "pleasantly": {
@@ -8483,6 +8425,24 @@
             ],
             "NN": [
                 "prince"
+            ]
+        },
+        "sentence_part": [
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
+        ]
+    },
+    "Prince": {
+        "pos": "PROPN",
+        "inflections": {
+            "NNS": [
+                "Prince"
+            ],
+            "NN": [
+                "Prince"
             ]
         },
         "sentence_part": [
@@ -9836,22 +9796,22 @@
         ]
     },
     "sharp": {
-        "pos": "PROPN",
+        "pos": "ADJ",
         "inflections": {
-            "NNS": [
-                "sharp",
-                "sharps"
+            "JJR": [
+                "sharper"
             ],
-            "NN": [
+            "JJS": [
+                "sharpest"
+            ],
+            "JJ": [
                 "sharp"
             ]
         },
         "sentence_part": [
-            "simple subject",
             "complete subject",
-            "compound subject",
-            "direct object",
-            "indirect object"
+            "complement",
+            "modifier"
         ]
     },
     "shatter": {
@@ -10184,31 +10144,21 @@
         ]
     },
     "sleep": {
-        "pos": "VERB",
+        "pos": "NOUN",
         "inflections": {
-            "VBD": [
-                "slept"
-            ],
-            "VBN": [
-                "slept"
-            ],
-            "VBG": [
-                "sleeping"
-            ],
-            "VBZ": [
-                "sleeps"
-            ],
-            "VB": [
+            "NNS": [
                 "sleep"
             ],
-            "VBP": [
+            "NN": [
                 "sleep"
             ]
         },
         "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "slight": {
@@ -10302,6 +10252,24 @@
             "simple predicate",
             "complete predicate",
             "compound predicate"
+        ]
+    },
+    "Solomon": {
+        "pos": "PROPN",
+        "inflections": {
+            "NNS": [
+                "Solomon"
+            ],
+            "NN": [
+                "Solomon"
+            ]
+        },
+        "sentence_part": [
+            "simple subject",
+            "complete subject",
+            "compound subject",
+            "direct object",
+            "indirect object"
         ]
     },
     "son": {
@@ -12617,21 +12585,19 @@
         ]
     },
     "well": {
-        "pos": "ADJ",
+        "pos": "ADV",
         "inflections": {
-            "JJR": [
+            "RBR": [
                 "better"
             ],
-            "JJS": [
+            "RBS": [
                 "best"
             ],
-            "JJ": [
+            "RB": [
                 "well"
             ]
         },
         "sentence_part": [
-            "complete subject",
-            "complement",
             "modifier"
         ]
     },
