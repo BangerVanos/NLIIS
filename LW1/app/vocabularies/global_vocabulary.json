@@ -18,37 +18,6 @@
         ],
         "creation_type": "machinery"
     },
-    "be": {
-        "pos": "AUX",
-        "inflections": {
-            "VB": [
-                "be"
-            ],
-            "VBD": [
-                "was",
-                "were"
-            ],
-            "VBG": [
-                "being"
-            ],
-            "VBN": [
-                "been"
-            ],
-            "VBP": [
-                "am",
-                "are"
-            ],
-            "VBZ": [
-                "is"
-            ]
-        },
-        "sentence_part": [
-            "simple predicate",
-            "complete predicate",
-            "compound predicate"
-        ],
-        "creation_type": "machinery"
-    },
     "brilliant": {
         "pos": "ADJ",
         "inflections": {
@@ -257,23 +226,23 @@
     "drive": {
         "pos": "VERB",
         "inflections": {
+            "VB": [
+                "drive"
+            ],
             "VBD": [
                 "drove"
-            ],
-            "VBN": [
-                "driven"
             ],
             "VBG": [
                 "driving"
             ],
-            "VBZ": [
-                "drives"
-            ],
-            "VB": [
-                "drive"
+            "VBN": [
+                "driven"
             ],
             "VBP": [
                 "drive"
+            ],
+            "VBZ": [
+                "drives"
             ]
         },
         "sentence_part": [
@@ -281,7 +250,7 @@
             "complete predicate",
             "compound predicate"
         ],
-        "creation_type": "machinery"
+        "creation_type": "manual"
     },
     "early": {
         "pos": "ADV",
