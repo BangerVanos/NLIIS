@@ -5,7 +5,8 @@ import streamlit as st
 pg.show_pages(
     [
         pg.Page('app.py', 'Welcome page', icon='🌏'),
-        pg.Page('app/view/main_view.py', name='Main page', icon='🖥️')
+        pg.Page('app/view/main_view.py', name='Main page', icon='🖥️'),
+        pg.Page('app/view/modify_vocabulary.py', name='Modify vocabulary', icon='📖')
     ]
 )
 

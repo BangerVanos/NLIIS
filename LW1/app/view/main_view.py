@@ -1,9 +1,7 @@
 import streamlit as st
 from app.nl_processor.pdf_reader import PDFReader
-from app.nl_processor.vocabulary_creator import VocabularyCreator
+from app.nl_processor.vocabulary_creator import VocabularyCreator, VocabularyRepository
 import spacy
-import json
-import os
 
 
 def main_view():
@@ -21,7 +19,7 @@ def main_view():
     if pdf_file:
         text = PDFReader.extract_text_with_file(pdf_file)
         vocabulary = VocabularyCreator(text)                
-        vocabulary.save_inflections(global_vocabulary=True)
+        vocabulary.save_inflections(save_to_global_vocabulary=True)
         show_vocabulary(text)
 
 
@@ -30,15 +28,15 @@ def show_vocabulary(text: str) -> None:
     with st.empty().container(height=250):
         st.text(text)
     
-    with open(os.path.join(os.path.dirname(__file__), '../vocabularies/vocabulary.json')) as file:
-        st.session_state.vocabulary = json.load(file)
-        filter_vocabulary()                   
+    st.session_state.vocabulary = VocabularyRepository.load_temp_vocabulary()
+    filter_vocabulary()                   
     
     load_filter_elements()    
     st.write(f'### Vocabulary size: {len(st.session_state.get('vocabulary').keys())}')       
 
     with st.empty().container(height=500):
-        for lemma, info in st.session_state.get('vocabulary').items():            
+        for lemma, info in dict(sorted(st.session_state.get('vocabulary').items(),
+                                       key=lambda item: item[0].lower())).items():            
             st.text(f'- {(lemma.capitalize())}')
             for tag, inflections in info['inflections'].items():
                 st.text(f'{', '.join(inflections)} - {spacy.explain(tag)}. '

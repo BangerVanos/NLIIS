@@ -14,4 +14,16 @@ class NLConfigManager:
 
     @property
     def possible_sentence_parts(self) -> dict:
-        return self._configs['POSSIBLE_TAG_PART_OF_SENTENCE']    
+        return self._configs['POSSIBLE_TAG_PART_OF_SENTENCE']
+
+    @property
+    def pos_full_names(self) -> dict:
+        return self._configs['POS_FULL_NAMES']
+
+    @property
+    def tags_for_pos(self) -> dict:
+        return self._configs['POS_TAGS_LIST']
+
+    @property
+    def parts_of_sentence(self) -> list:
+        return self._configs['PARTS_OF_SENTENCE']    
