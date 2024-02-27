@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+from app.backend.text_ectractors import TextEctractor
 
 
 class MainView:
@@ -45,8 +46,8 @@ class MainView:
             else:
                 st.error('Write something into text field first!')
         elif st.session_state.get('text_input_option') == 'Via file':
-            if st.session_state.get('file_input_field'):
-                st.write(st.session_state.get('file_input_field'))
+            if file := st.session_state.get('file_input_field'):                                                 
+                st.write(TextEctractor.extract_text(file, file.type))
             else:
                 st.error('Upload your file first!')
 
