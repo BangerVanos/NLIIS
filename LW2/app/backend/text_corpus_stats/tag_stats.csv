@@ -5,7 +5,7 @@ tag,absolute_frequency
 ADD,4
 CC,14
 CD,30
-DT,47
+DT,48
 EX,1
 FW,90
 IN,115
@@ -15,7 +15,7 @@ JJS,44
 LS,14
 MD,10
 NN,8071
-NNP,7350
+NNP,7349
 NNPS,123
 NNS,3065
 PDT,6

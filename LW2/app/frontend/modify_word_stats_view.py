@@ -15,7 +15,22 @@ class ModifyView:
             st.session_state['configs_manager'] = ConfigsManager()
 
     def run(self) -> None:
-        st.write(f'## Modify')
+        st.write(f'## Modify text corpus stats')
+        st.info('#### Want to define sense of tags like PROPN or NNP?\n'
+                'Open spolier down below 🔽')
+        
+        # Tags explanation expander
+        with st.expander('#### See the tags explanation'):
+            pos_col, tag_col = st.columns(2)
+            with pos_col:
+                for pos in (st.session_state['configs_manager']
+                            .pos_full_names.keys()):
+                    st.write(f'{pos} = {spacy.explain(pos)}')
+            with tag_col:
+                for tag in (st.session_state['configs_manager']
+                            .spacy_tag_list):
+                    st.write(f'{tag} = {spacy.explain(tag)}')
+
         edited_word_stats = st.data_editor(
             st.session_state.get('modify_query_handler').get_raw_word_df(),
             column_config={

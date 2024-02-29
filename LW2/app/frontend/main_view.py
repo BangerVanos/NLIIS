@@ -12,11 +12,13 @@ class MainView:
         pass
     
     def run(self):
-        st.set_page_config(page_title='Main view', layout='wide')        
+        st.set_page_config(page_title='Main view', layout='wide')
+        st.write('### Choose the way of phrase prompting (manually/through file) 🔻')        
         text_upload_selector = st.selectbox(label='Choose way of text input',
                                             options=['Manual', 'Via file'],
                                             index=0,
                                             key='text_input_option')
+        st.write('### Insert your phrase down there 🔻')
         if st.session_state.get('text_input_option') == 'Manual':
             self._render_extrude_text_via_text_input()
         elif st.session_state.get('text_input_option') == 'Via file':

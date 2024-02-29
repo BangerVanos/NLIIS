@@ -1,5 +1,5 @@
 word,lemma,part_of_speech,tag,absolute_frequency
-A,A,PROPN,NNP,34
+A,A,DET,DT,34
 AAT,AAT,PROPN,NNP,1
 AB,AB,PROPN,NNP,4
 ABDOMEN,ABDOMEN,PROPN,NNP,3
