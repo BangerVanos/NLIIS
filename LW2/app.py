@@ -8,7 +8,10 @@ class WelcomePage:
         st.set_page_config(page_title='Welcome page',page_icon='🤗', layout='wide')
         self._page_list = [
             Page('app.py', name='Welcome page', icon='🤗'),
-            Page('app/frontend/main_view.py', name='Main page', icon='🧾')
+            Page('app/frontend/main_view.py', name='Main page', icon='🧾'),
+            Page('app/frontend/modify_word_stats_view.py', name='Modify', icon='🛠️'),
+            Page('app/frontend/update_text_corpus_view.py',
+                 name='Upload new texts to corpus', icon='📝')
         ]
     
 
