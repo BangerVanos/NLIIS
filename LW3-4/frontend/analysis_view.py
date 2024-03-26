@@ -34,8 +34,18 @@ class SemanticSyntacticAnalysisView:
         pass
 
     def run(self) -> None:
-        result = ResultLoader.load_semantic_syntactic_analysis()
-        st.write(result)
+        result: dict[str, dict[str, list]] = ResultLoader.load_semantic_syntactic_analysis()
+        with st.container(height=750, border=False):
+            for ind, (word, info) in enumerate(result.items(), 1):
+                with st.expander(f'{ind}. {word.capitalize()}'):
+                    st.write(f'Word - {word}')
+                    st.write(f'Semantic-syntactic analysis:')
+                    for feature, values in info.items():
+                        feat_col, val_col = st.columns([1, 12])
+                        with feat_col:
+                            st.write(f'{feature.capitalize()}:')
+                        with val_col:
+                            st.write(f'{'; '.join(values)}')
 
 
 view = AnalysisView()

@@ -10,5 +10,5 @@ class WordsFinder:
         tokens = self._nlp(text)
         return sorted(set(
             [token.lower_ if token.pos_ != 'PROPN' else token.text
-             for token in tokens]
+             for token in tokens if token.is_alpha and token.is_ascii]
         ))
