@@ -1,5 +1,6 @@
 import streamlit as st
 from backend.analysis_result_loaders import ResultLoader
+from nltk.tree import TreePrettyPrinter, Tree
 
 
 class AnalysisView:
@@ -25,7 +26,18 @@ class SyntacticAnalysisView:
         pass
 
     def run(self) -> None:
-        pass
+        result: dict[int, dict[str, str]] = ResultLoader.load_syntactic_analysis()
+        with st.container(height=750, border=False):
+            for ind, (_id, info) in enumerate(result.items(), 1):
+                with st.expander(f'{ind}. {info['raw_sentence'].capitalize()}'):
+                    st.write(f'Sentence: {info['raw_sentence'].capitalize()}')
+                    st.write(f'Penn treebank syntax tree format: {info['penn_treebank']}')
+                    st.write(f'Syntax Tree:')
+                    tree = Tree.fromstring(info['penn_treebank'])
+                    st.write(TreePrettyPrinter(tree).svg(nodecolor='black',
+                                                         leafcolor='black',
+                                                         funccolor='black'),
+                            unsafe_allow_html=True)
 
 
 class SemanticSyntacticAnalysisView:

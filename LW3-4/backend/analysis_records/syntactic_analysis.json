@@ -1,0 +1,54 @@
+{
+    "2040348259984": {
+        "raw_sentence": "I used to work on cruise ships as a musician.",
+        "penn_treebank": "(S (NP (PRP I)) (VP (VBD used) (S (VP (TO to) (VP (VB work) (PP (IN on) (NP (NN cruise) (NNS ships))) (PP (IN as) (NP (DT a) (NN musician))))))) (. .))"
+    },
+    "2042154684080": {
+        "raw_sentence": "I travelled a lot!",
+        "penn_treebank": "(S (NP (PRP I)) (VP (VBD travelled) (NP (DT a) (NN lot))) (. !))"
+    },
+    "2040110955664": {
+        "raw_sentence": "I spent the month before the\nfirst lockdown in four continents!",
+        "penn_treebank": "(S (NP (PRP I)) (VP (VBD spent) (NP (DT the) (NN month)) (PP (IN before) (NP (NP (DT the) (JJ \n) (JJ first) (NN lockdown)) (PP (IN in) (NP (CD four) (NNS continents)))))) (. !))"
+    },
+    "2040348551536": {
+        "raw_sentence": "I used to get up really early, drive to the airport and fly to\na port across the world and get on a ship just to get to work!",
+        "penn_treebank": "(S (NP (PRP I)) (VP (VBD used) (S (VP (TO to) (VP (VP (VB get) (PRT (RP up)) (ADVP (RB really) (RB early))) (, ,) (VP (VB drive) (PP (IN to) (NP (DT the) (NN airport)))) (CC and) (VP (VP (VB fly) (PP (IN to) (NP (NP (CD \n) (DT a) (NN port)) (PP (IN across) (NP (DT the) (NN world)))))) (CC and) (VP (VB get) (PP (IN on) (NP (DT a) (NN ship))) (S (ADVP (RB just)) (VP (TO to) (VP (VB get) (PP (IN to) (NP (NN work)))))))))))) (. !))"
+    },
+    "2040110955888": {
+        "raw_sentence": "Then I used to spend\nbetween three and fourteen days on the ship.",
+        "penn_treebank": "(S (ADVP (RB Then)) (NP (PRP I)) (VP (VBD used) (S (VP (TO to) (VP (VB spend) (NP (QP (IN \n) (IN between) (CD three) (CC and) (CD fourteen)) (NNS days)) (PP (IN on) (NP (DT the) (NN ship))))))) (. .))"
+    },
+    "2041759854384": {
+        "raw_sentence": "The ships were great.",
+        "penn_treebank": "(S (NP (DT The) (NNS ships)) (VP (VBD were) (ADJP (JJ great))) (. .))"
+    },
+    "2040348261424": {
+        "raw_sentence": "The food was\nexcellent, and the staff were brilliant.",
+        "penn_treebank": "(S (S (NP (DT The) (NN food)) (VP (VBD was) (ADJP (ADJP (JJ \n)) (ADJP (JJ excellent))))) (, ,) (CC and) (S (NP (DT the) (NN staff)) (VP (VBD were) (ADJP (JJ brilliant)))) (. .))"
+    },
+    "2040348550656": {
+        "raw_sentence": "The ship stopped at fantastic places, and I often\nused to spend the afternoon at the beach drinking cocktails or sightseeing.",
+        "penn_treebank": "(S (S (NP (DT The) (NN ship)) (VP (VBD stopped) (PP (IN at) (NP (JJ fantastic) (NNS places))))) (, ,) (CC and) (S (NP (PRP I)) (ADVP (RB often)) (VP (VBD \n) (S (VP (VBD used) (S (VP (TO to) (VP (VB spend) (NP (DT the) (NN afternoon)) (PP (IN at) (NP (DT the) (NN beach))) (S (VP (VBG drinking) (NP (NP (NNS cocktails)) (CC or) (NP (NN sightseeing)))))))))))) (. .))"
+    },
+    "2040110330736": {
+        "raw_sentence": "But there were\ndisadvantages too.",
+        "penn_treebank": "(S (CC But) (NP (EX there)) (VP (VBD were) (NP (NN \n) (NNS disadvantages)) (ADVP (RB too))) (. .))"
+    },
+    "2042155078048": {
+        "raw_sentence": "I often didn\u2019t know anyone on the ship.",
+        "penn_treebank": "(S (NP (PRP I)) (ADVP (RB often)) (VP (VBD did) (RB n\u2019t) (VP (VB know) (NP (NP (NN anyone)) (PP (IN on) (NP (DT the) (NN ship)))))) (. .))"
+    },
+    "2040110840752": {
+        "raw_sentence": "But the passengers all knew\nme, and they used to talk to me every time I left my cabin.",
+        "penn_treebank": "(S (CC But) (S (NP (NP (DT the) (NNS passengers)) (DT all)) (VP (VBD knew) (NP (NP (PRP \n)) (PRP me)))) (, ,) (CC and) (S (NP (PRP they)) (VP (VBD used) (S (VP (TO to) (VP (VB talk) (PP (IN to) (NP (PRP me))) (NP (NP (DT every) (NN time)) (SBAR (S (NP (PRP I)) (VP (VBD left) (NP (PRP$ my) (NN cabin))))))))))) (. .))"
+    },
+    "2040110955776": {
+        "raw_sentence": "I didn\u2019t have any privacy.",
+        "penn_treebank": "(S (NP (PRP I)) (VP (VBD did) (RB n\u2019t) (VP (VB have) (NP (DT any) (NN privacy)))) (. .))"
+    },
+    "2041811256592": {
+        "raw_sentence": "Of\ncourse, I had to chat to them politely even when I wasn\u2019t in the mood.",
+        "penn_treebank": "(S (ADVP (ADVP (RB Of) (RB \n)) (RB course)) (, ,) (NP (PRP I)) (VP (VBD had) (S (VP (TO to) (VP (VB chat) (PP (IN to) (NP (PRP them))) (ADVP (RB politely)) (SBAR (WHADVP (RB even) (WRB when)) (S (NP (PRP I)) (VP (VBD was) (RB n\u2019t) (PP (IN in) (NP (DT the) (NN mood)))))))))) (. .))"
+    }
+}
