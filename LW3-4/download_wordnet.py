@@ -1,4 +1,4 @@
-# Runs on new computer only once
+# Run on new computer only once
 import nltk
 import benepar
 

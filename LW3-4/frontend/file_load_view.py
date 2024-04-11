@@ -2,6 +2,7 @@ import streamlit as st
 from backend.file_load import PDFReader
 from backend.words_finder import WordsFinder
 from backend.semantic_syntactic_analysis import SemanticSyntacticAnalysis
+from backend.syntactic_analysis import SyntacticAnalysis
 
 
 class FileLoadView:
@@ -34,7 +35,9 @@ class FileLoadView:
     def _make_analysis(self, text):
         word_finder = WordsFinder()
         words = word_finder.find_words(text)
-        SemanticSyntacticAnalysis.semantic_syntactic_analysis(words, save=True)  
+        SemanticSyntacticAnalysis.semantic_syntactic_analysis(words, save=True)
+        syntactic_analyzer = SyntacticAnalysis()
+        syntactic_analyzer.build_syntax_trees(text)
 
 
 view = FileLoadView()

@@ -1,0 +1,3 @@
+app/backend/llm/
+app/backend/sentence-transformers/
+app/backend/text_corpus

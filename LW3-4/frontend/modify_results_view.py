@@ -1,6 +1,7 @@
 import streamlit as st
 from backend.modify_results import ResultModifier
 from backend.analysis_result_loaders import ResultLoader
+from nltk.tree import TreePrettyPrinter, Tree
 
 
 class ModifyAnalysisResultsView:
@@ -26,7 +27,49 @@ class ModifySyntacticAnalysisView:
         pass
 
     def run(self):
-        pass
+        old_result: dict[int, dict[str, str]] = ResultLoader.load_syntactic_analysis()
+        with st.container(height=750, border=False):
+            for ind, (_id, info) in enumerate(old_result.items(), 1):
+                with st.expander(f'{ind}. {info['raw_sentence'].capitalize()}'):
+                    sentence = info['raw_sentence'].capitalize()
+                    st.write(f'Sentence: {sentence}')
+                    st.write('Modify syntactic tree:')
+                    feat_col, val_col = st.columns([1, 12])
+                    with feat_col:
+                        st.write('Penn treebank tree form:')
+                    with val_col:
+                        st.text_input(label='Modify',
+                                      value=info['penn_treebank'],
+                                      key=f'penn_{_id}',
+                                      on_change=(lambda _id=_id, sentence=sentence: 
+                                                 self._update_modified_info(_id, sentence)))
+                    st.write('Preview syntactic tree:')
+                    tree = Tree.fromstring(st.session_state.get(f'penn_{_id}'))
+                    st.write(TreePrettyPrinter(tree).svg(nodecolor='black',
+                                                         leafcolor='black',
+                                                         funccolor='black'),
+                             unsafe_allow_html=True)
+        st.button(label='Save changes',
+                  help='Save all changes',
+                  key='save_syntactic_changes',
+                  on_click=self._save_changes)
+        
+    
+    def _update_modified_info(self, _id: int, sentence: str):
+        if st.session_state.get('modified_syntactic_info') is None:
+            st.session_state['modified_syntactic_info'] = {}
+        penn_treebank = st.session_state.get(f'penn_{_id}')
+        st.session_state['modified_syntactic_info'][_id] = {
+            'raw_sentence': sentence,
+            'penn_treebank': penn_treebank
+        }
+
+    def _save_changes(self):
+        ResultModifier.modify_syntactic_analysis(
+            st.session_state.get('modified_syntactic_info')
+        )
+        st.success('All changes have been saved!')
+        st.session_state['modified_syntactic_info'] = {}
 
 
 class ModifySemanticAnalysisView:
@@ -52,6 +95,7 @@ class ModifySemanticAnalysisView:
                                           on_change=lambda word=word: self._update_modified_info(word))
         st.button(label='Save changes',
                   help='Save all changes',
+                  key='save_semantic_changes',
                   on_click=self._save_changes)
     
     def _update_modified_info(self, word: str) -> None:
