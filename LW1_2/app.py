@@ -20,8 +20,8 @@ def main():
         )
     query = st.text_input(label='Запрос', key='query')
     st.header('3. Провести поиск по документам')
-    btn = ui.button('Провести поиск', variant='default', key='btn')
-    metrics_chk = ui.checkbox(label='Показать метрики?', key='metrics_chk')
+    btn = st.button('Провести поиск', type='secondary', key='btn')
+    metrics_chk = st.checkbox(label='Показать метрики?', key='metrics_chk')
     if btn:
         if not docs:
             st.error('Укажите путь к папке с документами!')
@@ -45,4 +45,8 @@ def main():
     
 
 if __name__ == "__main__":
+    # (('Здравствуйте' AND 'легенда') OR (NOT 'пора'))
+    # (('Рогожин' AND 'Мышкин') OR 'Каренина')
+    # (NOT 'смартфон')
+    # ('смартфон' AND 'телефон')
     main()
