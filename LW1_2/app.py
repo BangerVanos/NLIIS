@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit_shadcn_ui as ui
-from backend.processor import find_in_dir
+from backend.ex_processor import find_in_dir
 
 
 def main():    
