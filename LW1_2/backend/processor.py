@@ -27,18 +27,7 @@ class Processor:
         '!': 'not'
     }
 
-    def __init__(self, db_folders: list[str], query: str) -> None:
-        # for folder in db_folders:
-        #     print(glob(f'{folder.replace('\n', '').replace('\r', '').replace(os.sep, '/')}/*.txt', recursive=True))             
-        #     print(folder.replace('\n', '').replace('\r', '').replace(os.sep, '/'))
-        #     print('---------------------------')    
-        # path = 'D:\Programs\Programming\BSUIR\NLIIS\LW1_2\backend\file_db'
-        # if os.path.exists(path):
-        #     print(os.listdir(path))
-        # else:
-        #     print(f"The path {path} does not exist.")
-        # for file_path in db_folders:
-        #     print(os.listdir(os.path.normpath(file_path)))          
+    def __init__(self, db_folders: list[str], query: str) -> None:                  
         self._files = list(chain.from_iterable([glob(fr'{os.path.normpath(folder)}/*.txt', recursive=True)
                                                 for folder in db_folders]))           
         print(self._files)
