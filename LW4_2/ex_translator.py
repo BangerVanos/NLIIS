@@ -10,6 +10,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 import pandas as pd
 from tabulate import tabulate
+import json
 
 
 def get_wordnet_pos(treebank_tag):
@@ -244,7 +245,7 @@ translator = {'NOUN': 'Имя существительное',
               'CONJ': 'Союз',
               'PRCL': 'Частица',
               'INTJ': 'Междометие',
-              'nomn': 'Иминительный',
+              'nomn': 'Именительный',
               'gent': 'Родительный',
               'datv': 'Дательный',
               'accs': 'Винительный',
