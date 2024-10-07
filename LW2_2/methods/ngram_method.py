@@ -1,9 +1,7 @@
 import json
-
 from nltk import sent_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
 
-import pandas as pd
 
 with open('./methods/resources/ngram/ru_profile.json', encoding='utf-8') as file:
     ru_profile: dict = json.load(file)

@@ -75,11 +75,14 @@ class App:
             elif method == 'ngram':
                 language = ngram_language(text)
             results[path] = language
+        result_text = ''
         for path, language in results.items():
             with st.expander(path):
                 st.write('Document hyperlink')
                 st.write(f'<p><a href=file://localhost/{path}>{path}</a></p>', unsafe_allow_html=True)
                 st.write(f'Document language: *{language}*')
+                result_text += '\n'.join([f'Document path: {path}', f'Document language: {language}', f"{'-'*20}\n"])
+        st.download_button('Download detection results', result_text, file_name='result.txt')
 
 
 if __name__ == '__main__':
