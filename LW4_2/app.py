@@ -1,5 +1,7 @@
 import streamlit as st
 from translator import Translator
+from nltk.tree import Tree, TreePrettyPrinter
+import base64
 
 
 st.set_page_config('Translation page', layout='wide')
@@ -20,37 +22,26 @@ def translation_view() -> None:
         if translate_btn:
             translation_statistics = translator.translate(original_text)
             translation_statistics_to_save = translator.parse_statistics(translation_statistics)
-    with translation_col:
-        st.write('Translation statistics')
-        if translation_statistics:
+    if translation_statistics:
+        with translation_col:
+            st.write('Translation statistics')        
             with st.empty().container(height=300, border=True):
                 st.text(translation_statistics_to_save)
             save_btn = st.download_button(label='Save data', data=translation_statistics_to_save,
                                           file_name='result.txt', key='save_btn',
                                           help='Save translation statistics to data')
-
-
-def vocabulary_view() -> None:
-    print('dkkbnrk')
-    st.write('### Current vocabulary')
-    with st.container(height=500, border=None):
-        st.write(translator.parse_vocabulary())
-    st.write('### Update vocabulary')
-    user_vocabulary = st.text_area(label='Update vocabulary',
-                                   help='Update vocabulary by writing lines like "word - translation"')
-    with st.expander('User vocabulary syntax'):
-        st.write('Update vocabulary by writing lines like "word - translation"')
-        st.write('For example, you can write line: "they - они"')
-    update_btn = st.button(label='Update vocabulary', key='update_btn')
-    if update_btn:
-        pairs = user_vocabulary.split('\n')
-        pairs = [pair for pair in pairs if pair != '']
-        new_words = {}
-        for pair in pairs:
-            split = pair.split('-')
-            new_words[split[0].strip().lower()] = split[1].strip().lower()
-        translator.update_vocabulary(new_words)
-        st.session_state['translator'] = translator
+        for ind, sent_stat in enumerate(translation_statistics['statistics'], 1):
+            with st.expander(label=f'{ind}. {sent_stat["original"]}'):
+                st.write(f'Original text: {sent_stat["original"]}')
+                st.write(f'Translation: {sent_stat["translation"]}')
+                st.write(f'Original text word amount: {sent_stat["original_words_amount"]}')
+                st.write(f'Translation words amount: {sent_stat["translated_words_amount"]}')
+                st.write('Syntax tree:')
+                tree = Tree.fromstring(sent_stat['syntax_tree'])
+                svg = TreePrettyPrinter(tree).svg()
+                b64 = base64.b64encode(svg.encode('utf-8')).decode('utf-8')
+                html = r'<img src="data:image/svg+xml;base64,%s"/>' % b64
+                st.write(html, unsafe_allow_html=True)
 
 
 page = st.navigation([
